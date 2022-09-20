@@ -1,5 +1,5 @@
 import React from "react";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./components/Layout";
 import GlobalStyles from "./styles/GlobalStyles";
 
 const App: React.FC = () => {
