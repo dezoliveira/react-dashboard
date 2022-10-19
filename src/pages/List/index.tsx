@@ -94,7 +94,6 @@ const List: React.FC = () => {
           amount="R$ 130,00"
         />
 
-        
       </Content>
     </Container>
   )
