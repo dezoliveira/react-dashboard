@@ -9,7 +9,9 @@ import {
 
 import logo from '../../assets/logo.svg'
 
-import { Container, Header, Logo, MenuContainer, MenuItemLink, Title } from './styles'
+import { Container, Header, Logo, MenuContainer, Title } from './styles'
+
+import { Link } from 'react-router-dom'
 
 const Aside: React.FC = () => {
   return (
@@ -21,25 +23,25 @@ const Aside: React.FC = () => {
 
       <MenuContainer>
 
-        <MenuItemLink href="#">
+        <Link to="/dashboard">
           <MdDashboard />
           Dashboard
-        </MenuItemLink>
+        </Link>
 
-        <MenuItemLink href="#">
+        <Link to="/list/entry-balance">
           <MdArrowUpward />
           Entradas
-        </MenuItemLink>
+        </Link>
 
-        <MenuItemLink href="#">
+        <Link to="/list/exit-balance">
           <MdArrowDownward />
           Saidas
-        </MenuItemLink>
+        </Link>
 
-        <MenuItemLink href="#">
+        <Link to="#">
           <MdExitToApp />
           Sair
-        </MenuItemLink>
+        </Link>
 
       </MenuContainer>
     </Container>
